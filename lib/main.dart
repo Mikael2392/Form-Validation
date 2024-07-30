@@ -16,16 +16,16 @@ class MainApp extends StatelessWidget {
           displayLarge: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
-            color: Color.fromARGB(255, 47, 79, 50),
+            color: Color.fromARGB(255, 166, 106, 138),
           ),
         ),
         appBarTheme: const AppBarTheme(
-            color: Colors.lime,
+            color: Color.fromARGB(255, 57, 155, 220),
             iconTheme: IconThemeData(
-              color: Color.fromARGB(255, 47, 79, 50),
+              color: Color.fromARGB(255, 228, 235, 229),
             ),
             titleTextStyle: TextStyle(
-                color: Color.fromARGB(255, 47, 79, 50),
+                color: Color.fromARGB(255, 243, 255, 244),
                 fontWeight: FontWeight.bold,
                 fontSize: 24)),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.lime),
