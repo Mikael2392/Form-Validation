@@ -32,7 +32,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   style: Theme.of(context).textTheme.displayLarge,
                 ),
                 const SizedBox(height: 32),
-                // USERNAME TEXTFILED
                 TextFormField(
                   controller: usernameController,
                   decoration: const InputDecoration(
@@ -50,8 +49,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   },
                 ),
                 const SizedBox(height: 16),
-
-                // EMAIL TEXTFILED
                 TextFormField(
                   controller: emailController,
                   decoration: const InputDecoration(
@@ -74,9 +71,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     return null;
                   },
                 ),
-
                 const SizedBox(height: 16),
-                // PASSWORD TEXTFILED
                 TextFormField(
                   controller: passwordController,
                   decoration: const InputDecoration(
@@ -97,9 +92,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 const SizedBox(height: 32),
                 ElevatedButton(
                     onPressed: () {
-                      // Valiadtor Benutzen
-                      // Prüfe ob alle Felder des Forms valide sind
-                      // username != valide || email != valid || pw != valide
                       if (registrationFormKey.currentState!.validate()) {
                         print("Username: ${usernameController.text}");
                         print("Email: ${emailController.text}");
